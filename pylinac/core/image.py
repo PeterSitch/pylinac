@@ -890,7 +890,7 @@ class XIM(BaseImage):
         )
         diffs = self._get_diffs(lookup_table, xim)
         for diff, idx in zip(
-            np.asarray(diffs, dtype=np.int),
+            np.asarray(diffs, dtype=int),
             range(img_width + 1, img_width * img_height),
         ):
             left = a[idx - 1]
